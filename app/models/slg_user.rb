@@ -1,0 +1,2 @@
+class SlgUser < ApplicationRecord
+end
