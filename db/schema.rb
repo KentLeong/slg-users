@@ -23,8 +23,8 @@ ActiveRecord::Schema.define(version: 20170419013254) do
     t.integer  "total_wins"
     t.string   "most_played"
     t.integer  "yesterdays_rank"
-    t.integer  "discord_id"
-    t.integer  "summoner_id"
+    t.bigint   "discord_id"
+    t.bigint   "summoner_id"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end

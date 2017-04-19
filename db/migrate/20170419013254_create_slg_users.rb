@@ -8,8 +8,8 @@ class CreateSlgUsers < ActiveRecord::Migration[5.0]
       t.integer :total_wins
       t.string :most_played
       t.integer :yesterdays_rank
-      t.integer :discord_id
-      t.integer :summoner_id
+      t.bigint :discord_id
+      t.bigint :summoner_id
 
       t.timestamps
     end
