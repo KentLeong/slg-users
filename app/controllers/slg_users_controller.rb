@@ -1,3 +1,4 @@
+require 'pry'
 class SlgUsersController < ApplicationController
   before_action :set_slg_user, only: [:show, :update, :destroy]
 
@@ -16,7 +17,6 @@ class SlgUsersController < ApplicationController
   # POST /slg_users
   def create
     @slg_user = SlgUser.new(slg_user_params)
-    @slg_user.soloq_rank = Uri.decode(soloq_rank)
     if @slg_user.save
       render json: @slg_user, status: :created, location: @slg_user
     else
