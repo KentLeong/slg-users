@@ -16,7 +16,7 @@ class SlgUsersController < ApplicationController
   # POST /slg_users
   def create
     @slg_user = SlgUser.new(slg_user_params)
-    binding.pry
+    @slg_user.soloq_rank = Uri.decode(soloq_rank)
     if @slg_user.save
       render json: @slg_user, status: :created, location: @slg_user
     else
