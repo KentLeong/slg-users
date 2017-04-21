@@ -1,4 +1,3 @@
-require 'pry'
 class SlgUsersController < ApplicationController
   before_action :set_slg_user, only: [:show, :update, :destroy]
 
