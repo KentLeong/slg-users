@@ -1,4 +1,3 @@
-class SlgUser < ActiveModelSerializers::Model
-  # < ApplicationRecord
+class SlgUser < ApplicationRecord
   serialize :role, Array
 end
