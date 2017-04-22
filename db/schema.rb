@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 20170422192254) do
     t.integer  "coins",           default: 0
     t.integer  "total_loses",     default: 0
     t.integer  "rank",            default: 0
-    t.integer  "gold_earned",     default: 0
+    t.integer  "coin_earned",     default: 0
   end
 
 end
