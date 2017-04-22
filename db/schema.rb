@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170422150358) do
+ActiveRecord::Schema.define(version: 20170422192254) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 20170422150358) do
     t.integer  "coins",           default: 0
     t.integer  "total_loses",     default: 0
     t.integer  "rank",            default: 0
+    t.integer  "gold_earned",     default: 0
   end
 
 end

@@ -45,6 +45,6 @@ class SlgUsersController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def slg_user_params
-      params.require(:slg_user).permit(:username, :rank_elo, :soloq_rank, :total_wins, :most_played, :yesterdays_rank, :discord_id, :summoner_id, :coins, :total_loses, :role => [])
+      params.require(:slg_user).permit(:username, :rank, :rank_elo, :soloq_rank, :total_wins, :most_played, :yesterdays_rank, :discord_id, :summoner_id, :coins, :total_loses, :role => [])
     end
 end
