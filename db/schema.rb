@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 20170422150358) do
     t.datetime "updated_at",                  null: false
     t.integer  "coins",           default: 0
     t.integer  "total_loses",     default: 0
-    t.integer  "rank"
+    t.integer  "rank",            default: 0
   end
 
 end
